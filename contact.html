@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - My Finance Journal</title>
+  <meta name="description" content="Get in touch with My Finance Journal. Send us your suggestions, questions, or request to expand on a topic.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect width="36" height="36" rx="8" fill="#1a5276"/>
+          <path d="M8 26V14l5-4v16H8zm7.5 0V12l5-4v18h-5zm7.5 0V10l5-4v20h-5z" fill="#27ae60"/>
+        </svg>
+        <span>My Finance Journal</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="prospecting.html">Prospecting Form</a>
+        <a href="contact.html" class="active">Contact Us</a>
+        <a href="https://calendly.com/manishsanjanwala/60min" class="btn-nav" target="_blank" rel="noopener">Schedule Coaching</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have questions, suggestions, or want us to expand on a topic? Reach out!</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <h3>Get in Touch</h3>
+          <p>If you have suggestions to improve content, have specific questions or want me to expand on a topic of your interest, feel free to message me. I will use your Email only to respond to your queries or suggestions.</p>
+
+          <div class="contact-item">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <p style="margin:0;color:var(--gray-500);">Manish@MyFinanceJournal.OnMicrosoft.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div>
+              <strong>Schedule a Meeting</strong>
+              <p style="margin:0;color:var(--gray-500);">Book a free 60-minute coaching session via <a href="https://calendly.com/manishsanjanwala/60min" target="_blank" rel="noopener">Calendly</a></p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form fade-in" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your questions, suggestions, or topics you'd like us to cover..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg width="32" height="32" viewBox="0 0 36 36" fill="none">
+              <rect width="36" height="36" rx="8" fill="#1a5276"/>
+              <path d="M8 26V14l5-4v16H8zm7.5 0V12l5-4v18h-5zm7.5 0V10l5-4v20h-5z" fill="#27ae60"/>
+            </svg>
+            <span>My Finance Journal</span>
+          </a>
+          <p>Helping you increase awareness on personal finance matters through education, tools, and personalized coaching.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="blog.html#cash-flow">Cash Flow</a></li>
+            <li><a href="blog.html#investments">Investments</a></li>
+            <li><a href="blog.html#expenses">Expenses</a></li>
+            <li><a href="blog.html#savings">Savings</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Started</h4>
+          <ul>
+            <li><a href="prospecting.html">Prospecting Form</a></li>
+            <li><a href="https://calendly.com/manishsanjanwala/60min" target="_blank" rel="noopener">Book Coaching</a></li>
+            <li><a href="contact.html">Send a Message</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 My Finance Journal. All rights reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

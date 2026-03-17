@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - My Finance Journal</title>
+  <meta name="description" content="Personal finance articles covering cash flow, investments, mortgages, budgeting, credit scores, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect width="36" height="36" rx="8" fill="#1a5276"/>
+          <path d="M8 26V14l5-4v16H8zm7.5 0V12l5-4v18h-5zm7.5 0V10l5-4v20h-5z" fill="#27ae60"/>
+        </svg>
+        <span>My Finance Journal</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="prospecting.html">Prospecting Form</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="https://calendly.com/manishsanjanwala/60min" class="btn-nav" target="_blank" rel="noopener">Schedule Coaching</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>Finance Blog</h1>
+      <p>Articles, insights, and guides to improve your personal finance knowledge</p>
+    </div>
+  </section>
+
+  <!-- Blog Listing -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Category Filter -->
+      <div class="category-filter fade-in">
+        <button class="active" data-category="all">All Topics</button>
+        <button data-category="cash-flow">Cash Flow</button>
+        <button data-category="expenses">Expenses</button>
+        <button data-category="savings">Savings</button>
+        <button data-category="investments">Investments</button>
+        <button data-category="alternate-investments">Alternate Investments</button>
+        <button data-category="pfb">Personal Finance Basics</button>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="blog-grid">
+
+        <!-- === CASH FLOW === -->
+        <a href="blog/optimizing-cash-flow.html" class="blog-card fade-in" data-category="cash-flow">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #1a5276, #2980b9);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Cash Flow</span>
+            <h3 class="blog-card__title">Optimizing Cash Flow</h3>
+            <p class="blog-card__excerpt">Learn strategies to optimize the flow of money in and out of your accounts for better financial health.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/leveraging-cash-flow.html" class="blog-card fade-in" data-category="cash-flow">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #1a5276, #2980b9);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Cash Flow</span>
+            <h3 class="blog-card__title">Leveraging Cash Flow</h3>
+            <p class="blog-card__excerpt">Discover how to leverage your cash flow to build wealth and achieve your financial goals.</p>
+            <div class="blog-card__meta">
+              <span>July 20, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/factors-influencing-spending-investing.html" class="blog-card fade-in" data-category="cash-flow">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #1a5276, #2980b9);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Cash Flow</span>
+            <h3 class="blog-card__title">Factors Influencing Spending &amp; Investing</h3>
+            <p class="blog-card__excerpt">Understanding the key factors that determine how you allocate your money between spending and investing.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- === EXPENSES === -->
+        <a href="blog/expense-trending-budgeting.html" class="blog-card fade-in" data-category="expenses">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #27ae60, #2ecc71);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Expenses</span>
+            <h3 class="blog-card__title">Expense Trending &amp; Budgeting</h3>
+            <p class="blog-card__excerpt">Master the art of tracking expenses and creating effective budgets to manage your money.</p>
+            <div class="blog-card__meta">
+              <span>July 20, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/factors-influencing-budget-trends.html" class="blog-card fade-in" data-category="expenses">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #27ae60, #2ecc71);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Expenses</span>
+            <h3 class="blog-card__title">Factors Influencing Budget Trends</h3>
+            <p class="blog-card__excerpt">Understand what drives changes in your budget over time and how to adapt your planning.</p>
+            <div class="blog-card__meta">
+              <span>July 14, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/taxes-fees.html" class="blog-card fade-in" data-category="expenses">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #27ae60, #2ecc71);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Expenses</span>
+            <h3 class="blog-card__title">Taxes &amp; Fees</h3>
+            <p class="blog-card__excerpt">A guide to understanding taxes and fees that affect your personal finances.</p>
+            <div class="blog-card__meta">
+              <span>July 20, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- === SAVINGS === -->
+        <a href="blog/all-you-need-to-know-about-credit-score.html" class="blog-card fade-in" data-category="savings">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #f39c12, #f1c40f);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Savings</span>
+            <h3 class="blog-card__title">All You Need to Know About Credit Score</h3>
+            <p class="blog-card__excerpt">A comprehensive guide to understanding, monitoring, and improving your credit score.</p>
+            <div class="blog-card__meta">
+              <span>July 20, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/correlation-between-low-credit-score-and-financial-habits.html" class="blog-card fade-in" data-category="savings">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #f39c12, #f1c40f);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Savings</span>
+            <h3 class="blog-card__title">Correlation Between Low Credit Score and Financial Habits</h3>
+            <p class="blog-card__excerpt">How your everyday financial habits directly impact your credit score and what you can do about it.</p>
+            <div class="blog-card__meta">
+              <span>July 20, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/maintain-minimum-balance-in-your-savings-checking-accounts.html" class="blog-card fade-in" data-category="savings">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #f39c12, #f1c40f);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Savings</span>
+            <h3 class="blog-card__title">Maintain Minimum Balance in Your Savings &amp; Checking Accounts</h3>
+            <p class="blog-card__excerpt">Why keeping a minimum balance matters and how it protects your financial foundation.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/when-not-to-take-a-line-of-credit.html" class="blog-card fade-in" data-category="savings">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #f39c12, #f1c40f);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Savings</span>
+            <h3 class="blog-card__title">When Not to Take a Line of Credit</h3>
+            <p class="blog-card__excerpt">Understanding the right time to say no to credit and protect your financial well-being.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/save-even-more-with-balance-transfer-card-and-heloc-account.html" class="blog-card fade-in" data-category="savings">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #f39c12, #f1c40f);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Savings</span>
+            <h3 class="blog-card__title">Save Even More with Balance Transfer Card and HELOC Account</h3>
+            <p class="blog-card__excerpt">Strategies to reduce interest costs using balance transfers and home equity lines of credit.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- === INVESTMENTS === -->
+        <a href="blog/demystifying-investments.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Demystifying Investments</h3>
+            <p class="blog-card__excerpt">Breaking down the world of investments into understandable concepts for everyday investors.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/investment-avenues.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Investment Avenues</h3>
+            <p class="blog-card__excerpt">Explore the different investment avenues available and find the right ones for your financial goals.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/recommended-allocation.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Recommended Allocation</h3>
+            <p class="blog-card__excerpt">Guidelines for distributing your investments across different asset classes for balanced growth.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/common-investor-biases.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Common Investor Biases</h3>
+            <p class="blog-card__excerpt">Identify and overcome the psychological biases that can lead to poor investment decisions.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/introduction-to-asset-classes.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Introduction to Asset Classes</h3>
+            <p class="blog-card__excerpt">Learn about different asset classes — stocks, bonds, real estate, and more — and how they fit your portfolio.</p>
+            <div class="blog-card__meta">
+              <span>July 20, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/investment-considerations.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Investment Considerations</h3>
+            <p class="blog-card__excerpt">Key factors to evaluate before making any investment decision for better outcomes.</p>
+            <div class="blog-card__meta">
+              <span>July 20, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/importance-of-regular-investments.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Importance of Regular Investments</h3>
+            <p class="blog-card__excerpt">Why consistency in investing matters and how regular contributions compound over time.</p>
+            <div class="blog-card__meta">
+              <span>July 20, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/comparing-401k-and-equity-investment.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Comparing 401k and Equity Investment</h3>
+            <p class="blog-card__excerpt">A detailed comparison of retirement accounts and direct equity investments to help you decide.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/special-purpose-investments.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Special Purpose Investments</h3>
+            <p class="blog-card__excerpt">Learn about goal-specific investment vehicles designed for particular financial objectives.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/individual-controlled-retirement-schemes.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Individual Controlled Retirement Schemes</h3>
+            <p class="blog-card__excerpt">Understanding IRA, Roth IRA, and other retirement accounts you can manage on your own.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/investment-in-foreign-countries.html" class="blog-card fade-in" data-category="investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Investments</span>
+            <h3 class="blog-card__title">Investment in Foreign Countries</h3>
+            <p class="blog-card__excerpt">Exploring opportunities and considerations for international investments beyond your home market.</p>
+            <div class="blog-card__meta">
+              <span>July 14, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- === ALTERNATE INVESTMENTS (Mortgages/Home) === -->
+        <a href="blog/debt-mortgages.html" class="blog-card fade-in" data-category="alternate-investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Alternate Investments</span>
+            <h3 class="blog-card__title">Debt &amp; Mortgages</h3>
+            <p class="blog-card__excerpt">Understanding the relationship between debt management and mortgage decisions.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/mortgage-basics.html" class="blog-card fade-in" data-category="alternate-investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Alternate Investments</span>
+            <h3 class="blog-card__title">Mortgage Basics</h3>
+            <p class="blog-card__excerpt">Everything you need to know about how mortgages work before taking one out.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/selecting-the-right-mortgage.html" class="blog-card fade-in" data-category="alternate-investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Alternate Investments</span>
+            <h3 class="blog-card__title">Selecting the Right Mortgage</h3>
+            <p class="blog-card__excerpt">A guide to comparing mortgage options and choosing the best one for your situation.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/should-i-refinance.html" class="blog-card fade-in" data-category="alternate-investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Alternate Investments</span>
+            <h3 class="blog-card__title">Should I Refinance?</h3>
+            <p class="blog-card__excerpt">Key considerations to help you decide whether refinancing your mortgage makes sense.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/caveat-emptor-for-mortgage-shoppers.html" class="blog-card fade-in" data-category="alternate-investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Alternate Investments</span>
+            <h3 class="blog-card__title">Caveat Emptor for Mortgage Shoppers</h3>
+            <p class="blog-card__excerpt">Buyer beware! Important warnings and tips for anyone shopping for a mortgage.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/how-to-reduce-overall-mortgage-cost.html" class="blog-card fade-in" data-category="alternate-investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Alternate Investments</span>
+            <h3 class="blog-card__title">How to Reduce Overall Mortgage Cost</h3>
+            <p class="blog-card__excerpt">Proven strategies to save thousands over the life of your mortgage.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/how-to-determine-budget-for-a-new-home.html" class="blog-card fade-in" data-category="alternate-investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Alternate Investments</span>
+            <h3 class="blog-card__title">How to Determine Budget for a New Home</h3>
+            <p class="blog-card__excerpt">Calculate the right budget for your home purchase without overextending your finances.</p>
+            <div class="blog-card__meta">
+              <span>July 9, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/should-i-rent-or-buy-a-home.html" class="blog-card fade-in" data-category="alternate-investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Alternate Investments</span>
+            <h3 class="blog-card__title">Should I Rent or Buy a Home?</h3>
+            <p class="blog-card__excerpt">The age-old question analyzed with financial data to help you make the right decision.</p>
+            <div class="blog-card__meta">
+              <span>July 10, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/impact-of-home-purchase-on-future-expenses.html" class="blog-card fade-in" data-category="alternate-investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Alternate Investments</span>
+            <h3 class="blog-card__title">Impact of Home Purchase on Future Expenses</h3>
+            <p class="blog-card__excerpt">How buying a home affects your overall financial picture and future spending patterns.</p>
+            <div class="blog-card__meta">
+              <span>July 14, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog/home-as-an-investment.html" class="blog-card fade-in" data-category="alternate-investments">
+          <div class="blog-card__image" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__category">Alternate Investments</span>
+            <h3 class="blog-card__title">Home as an Investment</h3>
+            <p class="blog-card__excerpt">Analyzing whether your home should be considered an investment and how it compares to other options.</p>
+            <div class="blog-card__meta">
+              <span>July 20, 2021</span>
+              <span class="blog-card__read-more">Read More &rarr;</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container fade-in">
+      <h2>Want Personalized Financial Guidance?</h2>
+      <p>Book a complimentary coaching session and get tailored advice for your financial situation.</p>
+      <a href="https://calendly.com/manishsanjanwala/60min" class="btn btn--primary" target="_blank" rel="noopener">Schedule Free Session</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg width="32" height="32" viewBox="0 0 36 36" fill="none">
+              <rect width="36" height="36" rx="8" fill="#1a5276"/>
+              <path d="M8 26V14l5-4v16H8zm7.5 0V12l5-4v18h-5zm7.5 0V10l5-4v20h-5z" fill="#27ae60"/>
+            </svg>
+            <span>My Finance Journal</span>
+          </a>
+          <p>Helping you increase awareness on personal finance matters through education, tools, and personalized coaching.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="blog.html#cash-flow">Cash Flow</a></li>
+            <li><a href="blog.html#investments">Investments</a></li>
+            <li><a href="blog.html#expenses">Expenses</a></li>
+            <li><a href="blog.html#savings">Savings</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Started</h4>
+          <ul>
+            <li><a href="prospecting.html">Prospecting Form</a></li>
+            <li><a href="https://calendly.com/manishsanjanwala/60min" target="_blank" rel="noopener">Book Coaching</a></li>
+            <li><a href="contact.html">Send a Message</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 My Finance Journal. All rights reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
