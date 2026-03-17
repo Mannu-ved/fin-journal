@@ -260,6 +260,27 @@ p {
   z-index: 1;
 }
 
+.hero__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xl);
+}
+
+.hero__content {
+  flex: 1;
+}
+
+.hero__illustration {
+  flex: 0 0 400px;
+  max-width: 400px;
+}
+
+.hero__illustration svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.2));
+}
+
 .hero h1 {
   color: var(--white);
   font-size: 3.25rem;
@@ -429,6 +450,11 @@ p {
   color: #8e44ad;
 }
 
+.feature-card .icon--red {
+  background: #fdedec;
+  color: #e74c3c;
+}
+
 .feature-card h3 {
   margin-bottom: var(--space-sm);
   font-size: 1.2rem;
@@ -474,19 +500,36 @@ p {
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.5);
   position: relative;
   overflow: hidden;
+}
+
+.blog-card__image::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
 }
 
 .blog-card__image::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 40%;
-  background: linear-gradient(transparent, rgba(0,0,0,0.1));
+  bottom: -40px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+
+.blog-card__image svg {
+  position: relative;
+  z-index: 1;
 }
 
 .blog-card__body {
@@ -665,6 +708,30 @@ p {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   color: var(--white);
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.about-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -30px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(39,174,96,0.12) 0%, transparent 70%);
+  border-radius: 50%;
 }
 
 .about-hero h1 {
@@ -798,14 +865,47 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  background: var(--primary);
-  color: var(--white);
+  background: var(--gray-200);
+  color: var(--gray-600);
   font-weight: 700;
-  font-size: 1.2rem;
-  margin: 0 auto var(--space-lg);
+  font-size: 0.75rem;
+  margin: 0 auto var(--space-sm);
+}
+
+/* Hide counter when icon is present */
+.step:has(.step__icon)::before {
+  display: none;
+}
+
+.step__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-md);
+  box-shadow: 0 4px 15px rgba(26, 82, 118, 0.3);
+}
+
+.step:nth-child(2) .step__icon {
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.step:nth-child(3) .step__icon {
+  background: linear-gradient(135deg, #d4ac0d, var(--gold));
+  box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+}
+
+.step:nth-child(4) .step__icon {
+  background: linear-gradient(135deg, #7d3c98, #9b59b6);
+  box-shadow: 0 4px 15px rgba(142, 68, 173, 0.3);
 }
 
 .step h4 {
@@ -823,6 +923,25 @@ p {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   color: var(--white);
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
+  border-radius: 50%;
+}
+
+.cta .container {
+  position: relative;
+  z-index: 1;
 }
 
 .cta h2 {
@@ -977,6 +1096,9 @@ p {
 
   .hero { padding: 120px 0 60px; }
   .hero h1 { font-size: 2.5rem; }
+
+  .hero__inner { flex-direction: column; }
+  .hero__illustration { flex: none; max-width: 320px; margin: 0 auto; }
 
   .nav {
     display: none;
