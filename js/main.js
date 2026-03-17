@@ -48,28 +48,41 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterButtons = document.querySelectorAll('.category-filter button');
   const blogCards = document.querySelectorAll('.blog-card');
 
+  function filterByCategory(category) {
+    filterButtons.forEach(b => b.classList.remove('active'));
+    const activeBtn = document.querySelector(`.category-filter button[data-category="${category}"]`);
+    if (activeBtn) activeBtn.classList.add('active');
+
+    blogCards.forEach(card => {
+      if (category === 'all' || card.dataset.category === category) {
+        card.style.display = '';
+        requestAnimationFrame(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        });
+      } else {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(10px)';
+        setTimeout(() => { card.style.display = 'none'; }, 300);
+      }
+    });
+  }
+
   filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      const category = btn.dataset.category;
-
-      filterButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      blogCards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-          card.style.display = '';
-          requestAnimationFrame(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          });
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(10px)';
-          setTimeout(() => { card.style.display = 'none'; }, 300);
-        }
-      });
+      filterByCategory(btn.dataset.category);
     });
   });
+
+  // Auto-filter from URL hash (e.g., blog.html#cash-flow)
+  if (filterButtons.length > 0 && window.location.hash) {
+    const hash = window.location.hash.substring(1);
+    const matchingBtn = document.querySelector(`.category-filter button[data-category="${hash}"]`);
+    if (matchingBtn) {
+      filterByCategory(hash);
+      document.getElementById('category-filter')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
   // --- Contact form ---
   const contactForm = document.getElementById('contactForm');
